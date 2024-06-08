@@ -1,6 +1,6 @@
 {
   "name": "strapi-stripe",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "Online payments and subscriptions made simple, secure and fast. This free plugin enables you to accept online payments and create subscriptions using Credit Card, Apple pay, Google pay, SEPA Direct Debit, ACH Direct Debit on your Strapi app via Stripe.",
   "strapi": {
     "name": "strapi-stripe",
@@ -8,9 +8,9 @@
     "kind": "plugin"
   },
   "dependencies": {
-    "better-sqlite3": "^7.6.2",
-    "html-react-parser": "^1.4.10",
-    "stripe": "^8.210.0"
+    "better-sqlite3": "^9.6.0",
+    "html-react-parser": "^5.1.10",
+    "stripe": "^14.25.0"
   },
   "scripts": {
     "format": "npm-run-all -p format:*",
@@ -32,7 +32,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^37.9.1",
+    "eslint-plugin-jsdoc": "^48.2.9",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.28.0",
@@ -73,7 +73,7 @@
     }
   ],
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=14.19.1",
     "npm": ">=6.0.0"
   },
   "keywords": [
