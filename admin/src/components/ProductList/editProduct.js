@@ -136,7 +136,7 @@ const EditProduct = ({ productId, isEditVisible, handleCloseEdit, handleClickUpd
         setUpload(true);
         setUploadMessage('Uploading Product image');
 
-        const response = await uploadFiles(image);
+        const response = await uploadFiles(image, apiToken);
         const data = await response.json();
 
         if (data[0].id) {

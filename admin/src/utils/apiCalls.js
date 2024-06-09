@@ -98,13 +98,11 @@ export async function getProductPayments(productId, sort, order, offset, limit, 
   return response;
 }
 
-export async function uploadFiles(files) {
+export async function uploadFiles(files, apiToken) {
+  const axios = createInstance(apiToken);
   const formDocument = new FormData();
   formDocument.append('files', files[0]);
-  const response = await fetch(`${baseURL}/api/upload`, {
-    method: 'post',
-    body: formDocument,
-  });
+  const response = await axios.post(`${baseURL}/api/upload`, formDocument);
 
   return response;
 }
